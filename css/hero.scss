@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%
+}
+
+html {
+    font-size: 1.6rem;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+header{
+    padding: 1rem;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 9.3rem;
+    width: 50%;
+    height: 40%;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(3rem);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+ 
+
+}
+
+
+
+li{
+    padding: 1.6rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+&:first-child{
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+}
+
+a{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Inria Sans', sans-serif;
+    text-decoration: none;
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+
+    svg{
+        height: 3.5rem;
+        width: 3rem;
+    }
+}
+
+.hero{
+    height: 100%;
+    width: 100vw;
+    background-image: url(c);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center -45rem;
+    padding: 4rem;
+   }
+
+h2{
+    font-size: 2.7rem;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    
+  }
+
+p{
+    font-size: 1.8rem;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;  
+    margin-top: 3rem;
+ }
+
+strong{
+    color: #00BFEE;
+     }
+
+.premium{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Inria Sans', sans-serif;
+    border: none;
+    height: 5rem;
+    width: 18.5rem;
+    border-radius: .5rem;
+    background-color: #00BFEE;
+    color: white;
+    margin-top: 4rem;
+    
+  }
+
+  button{
+   position: relative;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+@media(min-width:800px){
+  
+   
+
+    body{
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    .navbar{
+         display: flex;
+         justify-content: space-between;
+         
+    
+        ul{
+            display: flex;
+            gap: 4rem;
+            position: static;
+            width: auto;
+            height: auto;
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(0);
+            transition: none;
+            cursor: pointer;
+        }
+    
+        .logo{
+            display: flex;
+            flex-direction: column;
+            font-size: 2rem;
+            font-family: 'Inria Sans', sans-serif;
+            font-weight: 700;
+            color: black;
+            text-align: center;
+        
+            svg{
+                height: 7rem;
+                width: 6rem;
+            }
+        }
+    
+    }
+
+    h2{
+        font-size: 7.2rem;
+    }
+
+    p{
+        font-size: 3.6rem;
+    }
+    
+    .premium{
+        font-size: 3.6rem;
+        height: 8.4rem;
+        width: 31.8rem;
+    }
+
+   .hero{
+    background-image: url(../assets/foto-hero-desktop.jpg);
+    background-position: center;
+    background-position: center 2rem;
+       
+   } 
+   
+   .botao{
+    display: none
+   }
+
+
+   li{
+    list-style: none;
+    font-size: 3rem;
+    font-family: 'Inria Sans', sans-serif;
+    color: black;
+    box-shadow: none;
+
+&:first-child{
+    border-top: none;
+}
+}
+  
+}
+   
